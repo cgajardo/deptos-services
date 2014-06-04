@@ -1,0 +1,34 @@
+
+# 
+# Carpetas que no deberian ser versionadas
+#
+
+/build
+/bin
+
+#
+# Se agrega esta lista sólo por si acaso,
+# en teoria no deberian ser considerados por gitignore pues los archivos ya estan siendo trackeados 
+#
+
+/src/gps.properties
+/src/gps.jboss.properties
+/src/log4j.xml
+/.externalToolBuilders
+/.settings
+.classpath
+.project
+
+#
+# Si se quiere ignorar un archivo en cada commit, se debe marcar como
+# assume-unchanged. Un ejemplo de uso es el archivo gps.properties el cual se
+# quiere que no sea comiteado ( dado que tiene configuración personal) la
+# mayoria de las veces. El comando para esto es "git update-index
+# --assume-unchanged path/to/file.txt", pero también existe la
+# funcionalidad a través de egit con Team->Advanced->Assume Unchanged.
+# Cuando se quiera explicitamente realizar el commit del archivo se puede
+# quitar el assume unchanged con "no-assume-unchanged", por línea de
+# comando sería git update-index --no-assume-unchanged path/to/file.txt y
+# por egit Team->Advanced->No Assume Unchanged. Considerar que esta
+# configuración es sólo local.
+# 
