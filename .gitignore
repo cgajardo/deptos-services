@@ -11,8 +11,7 @@
 # en teoria no deberian ser considerados por gitignore pues los archivos ya estan siendo trackeados 
 #
 
-/src/gps.properties
-/src/gps.jboss.properties
+/src/deptos.properties
 /src/log4j.xml
 /.externalToolBuilders
 /.settings
@@ -21,7 +20,7 @@
 
 #
 # Si se quiere ignorar un archivo en cada commit, se debe marcar como
-# assume-unchanged. Un ejemplo de uso es el archivo gps.properties el cual se
+# assume-unchanged. Un ejemplo de uso es el archivo deptos.properties el cual se
 # quiere que no sea comiteado ( dado que tiene configuración personal) la
 # mayoria de las veces. El comando para esto es "git update-index
 # --assume-unchanged path/to/file.txt", pero también existe la
